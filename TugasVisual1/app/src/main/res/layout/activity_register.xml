@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:scrollbars="vertical"
+    tools:context=".RegisterActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="#40FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="monospace"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#C0FFFFFF" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/validasiUsername"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:background="#40E6E6F4"
+        android:textColor="#C0FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:hint=" Username"
+            android:textColor="#C0FFFFFF" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/validasiNama"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/validasiUsername"
+        android:background="#40E6E6F4"
+        android:textColor="#C0FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtNama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:hint=" Nama"
+            android:textColor="#C0FFFFFF"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/validasiPassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/validasiNama"
+        android:layout_marginTop="20dp"
+        android:background="#40E6E6F4"
+        android:textColor="#C0FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#80FFFFFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint=" Password"
+            android:textColor="#C0FFFFFF"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/validasiKonfirmasiPassword"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/validasiPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#40E6E6F4"
+        android:textColor="#C0FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#80FFFFFF">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txtKonfirmasiPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:hint=" Konfirmasi Password"
+            android:textColor="#C0FFFFFF"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/validasiKonfirmasiPassword"
+        android:layout_marginTop="30dp"
+        android:background="#80E6E6F4"
+        android:text="Register"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#40E6E6F4"
+        android:text="Copyright INFORMATIKA 2016"
+        android:textColor="#C0FFFFFF"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:scrollbars="vertical"
+    tools:context=".MenuActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#40FFFFFF"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:fontFamily="cursive"
+        android:text="Seminfo"
+        android:textSize="90sp"
+        android:textColor="#C0FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="#40E6E6F4">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Input Data Peserta"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/b1"
+            android:layout_marginTop="20dp"
+            android:text="Input Data Nilai"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/b2"
+            android:layout_marginTop="20dp"
+            android:text="Tampilkan Seluruh Data"/>
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/b3"
+            android:layout_marginTop="20dp"
+            android:text="Tampilkan Seluruh Data"/>
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b4"
+            android:layout_marginTop="55dp"
+            android:layout_centerHorizontal="true"
+            android:text="ID. User :     |  Nama User :     "
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#40E6E6F4"
+        android:text="Copyright INFORMATIKA 2016"
+        android:textColor="#C0FFFFFF"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
